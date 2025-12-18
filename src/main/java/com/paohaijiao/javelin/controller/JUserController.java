@@ -81,7 +81,7 @@ public class JUserController {
         }
     }
 
-    @PostMapping
+    @PostMapping("/createUser")
     public ResponseEntity<JUserModel> createUser(@RequestBody JUserModel user) {
         list.add(user);
         return new ResponseEntity<>(user, HttpStatus.CREATED);
